@@ -1,1 +1,40 @@
-/*  your css code here. If applicable */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7f5af0;
+  font-family: sans-serif;
+}
+
+.search {
+  position: relative;
+  height: 40px;
+  transition: 0.3s ease;
+}
+
+.input {
+  height: 100%;
+  width: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  height: 100%;
+  width: 40px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search.active .input {
+  width: 200px;
+  background: white;
+  border: none;
+}
